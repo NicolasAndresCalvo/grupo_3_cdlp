@@ -1,11 +1,15 @@
 const express =  require ('express');
+const path = require ('path');
+const morgan = require('morgan');
+
 const app = express();
-const path = require ('path')
+const port = 3000
+const publicPath =  path.join(__dirname,'./public');
 
-const pathPublico =  path.join(__dirname,'./public');
+app.use(express.static(publicPath));
 
-app.use(express.static(pathPublico));
+app.use(morgan('tiny'));
 
-app.listen(3001, () => console.log ('server up at: http://localhost:3001/'));
+app.listen(process.env.PORT || port, () => console.log ('server up at: http://localhost:3000/'));
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'views/index.html')));
