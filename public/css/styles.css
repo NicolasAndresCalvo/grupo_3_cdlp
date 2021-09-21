@@ -51,9 +51,10 @@ header {
     font-size: 2vh;
 }
 
-/* GENERAL */
+/*MATEO MATEO MATEO*/
 
-.html-login{
+.html-login,
+.html-register{
     height: 99%;
     font-family: 'Handlee', cursive;
     
@@ -73,14 +74,14 @@ header {
 
 /* SINGIN */
 
-.box{
+.boxlogin{
     width: 300px;
     padding: 40px;
     background-color: #4A91F7;
     text-align: center;
     border-radius: 18%;
     border: 1px rgb(100, 224, 255);
-    
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .title{
@@ -88,10 +89,10 @@ header {
     font-weight: 500;
 }
 
-.box input[type="text"],
-.box input[type="password"],
-.box button[type="submit"],
-.box button[type="reset"]{
+.boxlogin input[type="text"],
+.boxlogin input[type="password"],
+.boxlogin button[type="submit"],
+.boxlogin button[type="reset"]{
     border: 0;
     background: none;
     display: block;
@@ -108,21 +109,21 @@ header {
     font-size: 14;
 }
 
-.box input[type="text"]:focus,
-.box input[type="password"]:focus{
+.boxlogin input[type="text"]:focus,
+.boxlogin input[type="password"]:focus{
     width: 280px;
     border-color:white;
 }
 
-.box button[type="submit"],
-.box button[type="reset"]{
+.boxlogin button[type="submit"],
+.boxlogin button[type="reset"]{
     border: 0;
     background: rgb(107, 190, 245);
     cursor: pointer;
 }
 
-.box button[type="submit"]:hover,
-.box button[type="reset"]:hover{
+.boxlogin button[type="submit"]:hover,
+.boxlogin button[type="reset"]:hover{
     transition: 1111ms;
     background: none;
 }
@@ -148,6 +149,7 @@ header {
     text-align: center;
     border-radius: 18%;
     border: 1px rgb(100, 224, 255);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 .titulo{
@@ -170,7 +172,7 @@ transition: all 0.3s ease;
 border: 0;
 background: none;
 display: flex;
-margin: 20px auto;
+margin: 10px auto;
 padding: 5px 3px;
 text-align: center;
 border: 1px;
@@ -179,7 +181,39 @@ outline: none;
 color: black;
 border-radius: 22px;
 transition: 360ms;
-font-family: 'arial', cursive;
 font-size: 16;
 }
 
+
+
+.todosbotones button[type="submit"],
+.todosbotones button[type="reset"],
+.todosbotones button[type="button"]{
+border: 2px solid black;
+background: rgb(238, 229, 229);
+display: flex;
+margin: 10px auto;
+padding: 8px 10px;
+text-align: center;
+border: 1px;
+width: 253px;
+outline: none;
+color: black;
+border-radius: 22px;
+transition: 360ms;
+font-size: 15;
+}
+
+.todosbotones button[type="submit"]:hover,
+.todosbotones button[type="reset"]:hover,
+.todosbotones button[type="button"]:hover{
+    transition: 1111ms;
+    background: none;
+}
+
+.todosbotones{
+    align-items: center;
+    flex-direction: column;
+}
+
+/*MATEO MATEO MATEO*/
