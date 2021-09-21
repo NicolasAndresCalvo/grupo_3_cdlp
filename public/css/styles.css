@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 header img { 
@@ -14,25 +13,195 @@ body {
     font-family: 'Handlee', cursive;
     height: 100vh;
     background-color: #f0f0f0;
+    font-size: 1.0rem;
 }
 
-header {
-    background-color: #4A91F7;
-    display: flex;
+.header {
+    background: #4A91F7;
+    color: whitesmoke;
+    border-radius: 0 0 3px 3px;
 
-    height: 108px;
-    width: auto;
-    margin-left: 2px;
-    margin-right: 2px;
-    border-radius: 3px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
-    width: 90px;
-    height: 45px;
+    width: 110px;
+    height: 60px;
+    margin-left: 1.5px;
 }
 
-.buscador{
+.buscador input {   
+    width: 200px;
+    height: 30px;
+    padding: 0 20px;
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    font-size: 2vh; 
+} 
+
+.container-logo-barra-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.navegador ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+.navegador ul li {
+    display: inline-block;
+}
+ 
+ .navegador ul li a {
+    display: block ;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 1.5px;
+ }
+  .navegador ul li a:hover{
+      background: #4763ED;
+      border-radius: 6px;
+  }
+
+  .precio{
+    font-size: 3vh;
+    color: green;
+}
+.producto{
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 2vh;
+    position: center;
+}
+.descuento{
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+}
+.encuadro{
+    padding: 20px 0 0 0;
+    align-items: center;
+    text-align: left;
+    font-size: 4vh;
+    background-color:#4A91F7 ;
+    border-radius: 10px;
+}
+
+
+/* #4A91F7 */
+.ver{
+    width: 350px;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #000000;
+}
+
+.pdp{
+    margin-top: 1px solid #ebebeb;
+    display: inline-block;
+}
+
+.section-html{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 361px) {
+    .body-html .section-html{
+    display: flex;
+    }
+  }
+
+  @media (min-width: 768px){
+    .body-html .section-html{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: auto;
+    }
+    .body-html .section-html .ver{
+        width: 46%;
+    }
+
+  }
+
+  @media (min-width: 1280px){
+    .body-html .section-html{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .body-html .section-html .ver{
+        width: 24%;
+    }
+
+  }
+  .main{
+      padding: 93px 8rem 8rem 8rem 
+  }
+
+  /* footer */
+.footer-icons {
+    color: #1259c3;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  footer p {
+    text-align: center;
+    padding: 10px;
+  }
+  footer h4 {
+    text-align: center;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 1px solid black;
+}
+/* fin */
+
+.detergentem{
+    width: auto;
+    height: 35vh;
+    padding: 0 163.05 0 163.05
+}
+
+/*MATEO MATEO MATEO*/
+
+.html-login,
+.html-register{
+    height: 99%;
+    font-family: 'Handlee', cursive;
+    
+}
+
+.bodylogin{
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -40,11 +209,35 @@ header {
     align-items: center;
 }
 
-.buscador input {
-    width: 170px;
-    height: 20px;
-    padding: 0 20px;
-    color: black;
+/* SINGIN */
+
+.boxlogin{
+    width: 300px;
+    padding: 40px;
+    background-color: #4A91F7;
+    text-align: center;
+    border-radius: 18%;
+    border: 1px rgb(100, 224, 255);
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.boxlogin input[type="text"],
+.boxlogin input[type="password"],
+.boxlogin button[type="submit"],
+.boxlogin button[type="reset"]{
+    border: 0;
+    background: rgb(238, 229, 229);
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    text-align: center;
+    border: 2px solid #d5dbd9;
+    width: 200px;
     outline: none;
     border: 1px solid silver;
     border-radius: 30px;
@@ -236,5 +429,3 @@ font-size: 15;
     align-items: center;
     flex-direction: column;
 }
-
-/*MATEO MATEO MATEO*/
