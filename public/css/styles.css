@@ -94,12 +94,12 @@ header {
 .boxlogin button[type="submit"],
 .boxlogin button[type="reset"]{
     border: 0;
-    background: none;
+    background: rgb(238, 229, 229);
     display: block;
     margin: 20px auto;
     padding: 14px 10px;
     text-align: center;
-    border: 2px solid rgb(107, 190, 245);
+    border: 2px solid #d5dbd9;
     width: 200px;
     outline: none;
     color: black;
@@ -112,13 +112,13 @@ header {
 .boxlogin input[type="text"]:focus,
 .boxlogin input[type="password"]:focus{
     width: 280px;
-    border-color:white;
+    border-color: none;
 }
 
 .boxlogin button[type="submit"],
 .boxlogin button[type="reset"]{
     border: 0;
-    background: rgb(107, 190, 245);
+    background: rgb(238, 229, 229);
     cursor: pointer;
 }
 
@@ -184,7 +184,27 @@ transition: 360ms;
 font-size: 16;
 }
 
+.select-register{
+    width: 253px;
+    margin: 9px auto;
+    padding: 5px 3px;
+    background-color: white;
+    border-radius: 18px;
+}
 
+.options-register{
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #9098A9;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+}
 
 .todosbotones button[type="submit"],
 .todosbotones button[type="reset"],
@@ -203,6 +223,7 @@ border-radius: 22px;
 transition: 360ms;
 font-size: 15;
 }
+
 
 .todosbotones button[type="submit"]:hover,
 .todosbotones button[type="reset"]:hover,
