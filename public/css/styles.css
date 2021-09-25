@@ -429,3 +429,139 @@ font-size: 15;
     align-items: center;
     flex-direction: column;
 }
+
+/* PRODUCT DETAIL */
+.productDetailBody {
+  /* background-color: black; */
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainProductDetail {
+  padding: 80px 0px 0px 0px;
+  text-align: center;
+  width: 100vw;
+  height: 80vw;
+  /* background-color: yellow; */
+}
+
+.productTittleContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.productTittle{
+  align-items: center;
+  text-align: left;
+  font-size: 3vh;
+}
+
+.productPictureContainer {
+  text-align: center;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+  background-color: white;
+  height: 20vh;
+}
+
+.productPicture {
+  padding: 5%;
+  border-image: 5%;
+}
+
+.productPriceContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.productPrice {
+  text-align: left;
+  font-size: 4vh;
+  display: block;
+}
+
+.productCuota {
+  text-align: left;
+  font-size: 2vh;
+  display: block;
+}
+
+.productPaymentMethodContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 1% 2%;
+}
+
+.buttomContainer{
+  /* border: red solid; */
+  margin: 2%;
+}
+
+.buttomContainer button {
+  text-align: center;
+  display: block;
+  margin-top: 1%;
+  width: 100%;
+  font-size: 2vh;
+  font-family: 'Handlee', cursive;
+  font-weight: 900;
+}
+
+.buyButton {
+  background-color: #3483fa;
+  color: white;
+}
+
+.addButton {
+  background-color: rgba(65,137,230,.15);
+  color: #3483fa;
+}
+
+.descriptionContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.descriptionContainer h3 {
+
+}
+
+.questionContainer {
+  text-align: left;
+  /* border: red solid; */
+  padding: 2%;
+  margin: 2%;
+}
+
+.questionContainer h3 {
+  margin-top: 1%;
+}
+
+.questionContainer input{
+  width: 100%;
+  margin-top: 1%;
+}
+
+.questionContainer h4 {
+  margin-top: 2%;
+}
+
+.descriptionContainer p {
+
+}
+
+.question {
+
+}
+
+.reply {
+  color: grey;
+}
