@@ -9,6 +9,10 @@ const app = express();
 const port = 3000
 const publicPath =  path.join(__dirname,'../public');
 
+app.set('view engine', 'ejs');
+
+app.set('views', './src/views')
+
 app.use(express.static(publicPath));
 
 app.use(morgan('tiny'));
