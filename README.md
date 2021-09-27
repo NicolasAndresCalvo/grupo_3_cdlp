@@ -4,6 +4,10 @@
 
 Repo created for DH purposes
 
+#### Production URL:
+
+To access our site please use the following [link](https://cleanfy.herokuapp.com/).
+
 ---
 
 #### Products:
