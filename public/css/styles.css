@@ -11,8 +11,8 @@ header img {
 
 body {
     font-family: 'Handlee', cursive;
-    height: 100vh;
-    background-color: #f0f0f0;
+    
+    background-color: #f0f0f0;height: 100vh;
     font-size: 1.0rem;
 }
 
@@ -111,8 +111,9 @@ body {
 }
 
 .pdp{
-    margin-top: 1px solid #ebebeb;
+    margin-top: 1px solid gray;
     display: inline-block;
+    margin-bottom: 2px;
 }
 
 .section-html{
@@ -121,16 +122,25 @@ body {
 }
 
 @media (min-width: 361px) {
-    .body-html .section-html{
-    display: flex;
-    }
+  .descripcion {
+    display: block;
   }
+  main section article {
+    margin: 10px;
+  }
+  header nav {
+    display: block;
+  }
+  section {
+      display: inline-block;
+  }
+}
 
   @media (min-width: 768px){
     .body-html .section-html{
-        display: flex;
+        display: block;
         flex-wrap: wrap;
-        justify-content: auto;
+        flex-direction: column;
     }
     .body-html .section-html .ver{
         width: 46%;
@@ -430,6 +440,13 @@ font-size: 15;
     flex-direction: column;
 }
 
+.inputBox-terms{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+}
+
 /* PRODUCT DETAIL */
 .productDetailBody {
   /* background-color: black; */
@@ -552,6 +569,14 @@ font-size: 15;
 
 .questionContainer h4 {
   margin-top: 2%;
+}
+
+.ver img {
+  width: 40vh
+}
+
+.imagenProducto {
+  margin-bottom: 5px;
 }
 
 .descriptionContainer p {
