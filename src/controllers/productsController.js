@@ -2,9 +2,9 @@ const path = require('path');
 
 const productsController = {
   // listProduct: ,
-  detailProduct: (req, res) => res.render('./products/productDetail'),
-  cart: (req, res) => res.sendFile(path.join(__dirname, './products/productCart'))
-  // createView: ,
+  detailView: (req, res) => res.render('./products/productDetail'),
+  cartView: (req, res) => res.render('./products/productCart'),
+  createView: (req, res) => res.render('./products/productCreate')
   // updateView: ,
   // createProduct: ,
   // editProduct: ,
