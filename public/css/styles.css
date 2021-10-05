@@ -28,9 +28,9 @@ body {
 }
 
 .logo {
-    width: 110px;
-    height: 60px;
     margin-left: 1.5px;
+    font-size: 3vh;
+    border: 1px solid white;
 }
 
 .buscador input {   
@@ -82,7 +82,7 @@ body {
 .producto{
     font-size: 15px;
     font-weight: bold;
-    font-size: 2vh;
+    font-size: 1rem;
     position: center;
 }
 .descuento{
@@ -91,23 +91,22 @@ body {
     color: gray;
 }
 .encuadro{
-    padding: 20px 0 0 0;
-    align-items: center;
-    text-align: left;
+    padding: 10px;
     font-size: 4vh;
     background-color:#4A91F7 ;
-    border-radius: 10px;
+    margin-top: 5vh;
 }
 
-
-/* #4A91F7 */
 .ver{
     width: 350px;
-    padding: 5px;
     background-color: white;
     text-align: center;
-    margin: 10px;
+    margin-top: 5vh;
     border: 1px solid #000000;
+}
+
+.imagenProduct{
+  width: 50px;
 }
 
 .pdp{
@@ -117,7 +116,7 @@ body {
 }
 
 .section-html{
-    display: flex;
+    display: inline-block;
     justify-content: center;
 }
 
@@ -126,44 +125,86 @@ body {
     display: block;
   }
   main section article {
-    margin: 10px;
+    margin-top: 10px;
   }
+  body .header .navegador ul a{
+    display: none;
+  }
+
   header nav {
     display: block;
   }
-  section {
-      display: inline-block;
+  .section-html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .footerMedia{
+    display: none;
+  } */
+  .main{
+    padding: 50px 8rem 8rem 8rem }
+  .header .navegador .container-logo-barra-nav .buscador input {
+    display: none;
+  } 
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main .div h3{
+    font-size: 3vh;
+  }
+  body .main .div {
+    width: 100%;
+  }
+  .encuadro{
+    padding: 10px;
+    font-size: 4vh;
+    background-color:#4A91F7 ;
+    width: 60vh;
   }
 }
 
   @media (min-width: 768px){
-    .body-html .section-html{
-        display: block;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
     .body-html .section-html .ver{
         width: 46%;
     }
+    body .header .navegador ul a{
+      display: inline-block;
+    }
+    /* section{
+      display: flex;
+      flex-direction: row;
+    } */
 
   }
 
   @media (min-width: 1280px){
-    .body-html .section-html{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+    /* section{
+        display: inline-block;} */
     .body-html .section-html .ver{
         width: 24%;
     }
+    body .header .navegador ul a{
+      display: inline-block;
+    }
+     .main{
+      padding: 75px 8rem 8rem 8rem  
+    }
+    .section-html{
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+  }
+    /* footer{
+      display: flex;
+    } */
 
   }
-  .main{
-      padding: 93px 8rem 8rem 8rem 
-  }
 
-  /* footer */
+  /* footer
 .footer-icons {
     color: #1259c3;
     text-align: center;
@@ -188,13 +229,13 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    border-radius: 1px solid black;
+    height: 15%;
 }
-/* fin */
+ fin */
 
 .detergentem{
     width: auto;
-    height: 35vh;
+    height: 40vh;
     padding: 0 163.05 0 163.05
 }
 
@@ -577,6 +618,7 @@ font-size: 15;
 
 .imagenProducto {
   margin-bottom: 5px;
+  right: 3vh;
 }
 
 .descriptionContainer p {
