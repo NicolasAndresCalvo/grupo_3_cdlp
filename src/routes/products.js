@@ -11,7 +11,7 @@ router.get('/cart', productsController.cartView);
 
 router.get('/create', productsController.createView);
 
-// router.get('/:id/edit', productsController.updateView);
+router.get('/:id/edit', productsController.updateView);
 
 // router.post('/', productsController.createProduct);
 
