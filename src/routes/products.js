@@ -13,10 +13,10 @@ router.get('/create', productsController.createView);
 
 router.get('/:id/edit', productsController.updateView);
 
-router.post('/', productsController.createProduct);
+// router.post('/', productsController.createProduct);
 
-router.put('/:id', productsController.editProduct);
+// router.put('/:id', productsController.editProduct);
 
-router.delete('/:id', productsController.deleteProduct);
+// router.delete('/:id', productsController.deleteProduct);
 
 module.exports = router;
