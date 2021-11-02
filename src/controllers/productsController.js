@@ -1,14 +1,14 @@
 const path = require('path');
 
 const productsController = {
-  // listProduct: ,
-  detailProduct: (req, res) => res.render('./products/productDetail'),
-  cart: (req, res) => res.sendFile(path.join(__dirname, './products/productCart'))
-  // createView: ,
-  // updateView: ,
-  // createProduct: ,
-  // editProduct: ,
-  // deleteProduct:
+  listProduct: (req, res) => res.render('./products/productList'),
+  detailView: (req, res) => res.render('./products/productDetail'),
+  cartView: (req, res) => res.render('./products/productCart'),
+  createView: (req, res) => res.render('./products/productCreate'),
+  updateView: (req, res) => res.render('./products/productUpdate'),
+  createProduct: (req, res) => res.render('./products/productCreatePost'),
+  editProduct: (req, res) => res.render('./products/productEdit'),
+  deleteProduct: (req, res) => res.render('./products/productDelete')
 }
 
 module.exports = productsController;
