@@ -1,74 +1,121 @@
 [
-  {
-    "id": 2,
-    "name": "Javon Lifebouy",
-    "price": 80,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "Llevas dos pagas uno",
-    "image": "jabonlife.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Secador de piso",
-    "price": 300,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "Llevando 3 unidades tenes 60% de descuento en la ultima unidad",
-    "image": "secador-de-piso.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Esponja clasica",
-    "price": 200,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "Llevando mas de 10 unidades te damos 2 de regalo",
-    "image": "esponja.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Guantes de limpieza",
-    "price": 300,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "Llevando 3 pares pagas 2",
-    "image": "guantes-amarillos.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Detergente magistral",
-    "price": 500,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "Llevando mas de 3 unidades 20%OFF",
-    "image": "detergente.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Escoba de cepillo",
-    "price": 1000,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "50%Off en tu la segunda unidad",
-    "image": "escoba.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Javon para la ropa Skip",
-    "price": 500,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "llevas 3 pagas 2",
-    "image": "skip.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Papel higienico Scott",
-    "price": 300,
-    "discount": 2,
-    "category": "in-sale",
-    "description": "50%OFF en la tercera unidad",
-    "image": "papelhigenico.jpg"
-  }
+ {
+  "id": 2,
+  "name": "Javon Lifebouy",
+  "price": 80,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "Llevas dos pagas uno",
+  "image": "jabonlife.jpg",
+  "categoria": "oferta"
+ },
+ {
+  "id": 3,
+  "name": "Secador de piso",
+  "price": 300,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "Llevando 3 unidades tenes 60% de descuento en la ultima unidad",
+  "image": "secador-de-piso.jpg",
+  "categoria": "ultima"
+ },
+ {
+  "id": 4,
+  "name": "Esponja clasica",
+  "price": 200,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "Llevando mas de 10 unidades te damos 2 de regalo",
+  "image": "esponja.jpg",
+  "categoria": "ultima"
+ },
+ {
+  "id": 5,
+  "name": "Guantes de limpieza",
+  "price": 300,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "Llevando 3 pares pagas 2",
+  "image": "guantes-amarillos.jpg",
+  "categoria": "ultima"
+ },
+ {
+  "id": 6,
+  "name": "Detergente magistral",
+  "price": 500,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "Llevando mas de 3 unidades 20%OFF",
+  "image": "detergente.jpg",
+  "categoria": "ultima"
+ },
+ {
+  "id": 7,
+  "name": "Escoba de cepillo",
+  "price": 1000,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "50%Off en tu la segunda unidad",
+  "image": "escoba.jpg",
+  "categoria": "oferta"
+ },
+ {
+  "id": 9,
+  "name": "Papel higienico Scott",
+  "price": 300,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "50%OFF en la tercera unidad",
+  "image": "papelhigenico.jpg",
+  "categoria": "oferta"
+ },
+ {
+  "id": 88,
+  "name": "Javon para la ropa Skip",
+  "price": 500,
+  "discount": 2,
+  "category": "in-sale",
+  "description": "llevas 3 pagas 2",
+  "image": "skip.jpg",
+  "categoria": "ultima"
+ },
+ {
+  "name": "nuevo producto",
+  "description": "test",
+  "image": "descarga.jpg",
+  "categoria": "nueva categoria",
+  "caracteristiucas": "sin caracteristicas",
+  "price": "950",
+  "id": 89
+ },
+ {
+  "name": "otro nuevo producto",
+  "description": "test",
+  "image": "descarga.jpg",
+  "categoria": "nueva categoria",
+  "caracteristiucas": "sin caracteristicas",
+  "price": "753",
+  "id": 90
+ },
+ {
+  "name": "otro nuevo producto",
+  "description": "test",
+  "image": "descarga.jpg",
+  "categoria": "nueva categoria",
+  "caracteristiucas": "sin caracteristicas",
+  "price": "753",
+  "id": 91
+ },
+ {
+  "name": "",
+  "description": "",
+  "image": "descarga.jpg",
+  "categoria": "",
+  "caracteristiucas": "",
+  "price": "",
+  "id": 92
+ },
+ {
+  "id": 93
+ }
 ]

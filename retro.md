@@ -10,3 +10,9 @@ Creemos que lo mejor que hicimos fue armar el Trello, y dividir Tareas, lo hicim
 En donde fallamos este Sprint es en cuanto a armar el Trello y dividir tareas.
 
 Arrancamos muy rapido, y pudimos avanzar con muchas tareas.
+
+### SPRINT 4
+
+Tuvimos complicaciones a la hora de ensamblar los temas entre si. No pudimos organizar bien la distribucion de tareas individuales. No organizamos de manera correcta las reuniones. Debemos apostar por un mejor planteo desde el momento 0. 
+
+No encontramos muchos puntos beneficiosos en esta jornada.

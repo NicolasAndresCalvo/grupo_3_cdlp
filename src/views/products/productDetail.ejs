@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <%- include('../partials/headProduct.ejs') %>
-<body class="productDetailBody">
-  <main class="mainProductDetail">
-    <section class="productTittleSection">
-      <div class="productTittleContainer">
-        <h3 class="productTittle">Javon Lifebouy</h3>
-      </div>
-    </section>
-    <section class="productPictureSection">
-      <div class="productPictureContainer">
-        <!-- <img src="/img/JavonLifebouy.png" class="productPicture" alt=""> -->
-      </div>
-    </section>
-    <section class="productPriceSection">
-      <div class="productPriceContainer">
-        <span class="productPrice">$ 80</span>
-        <span class="productCuota">en 12x $6.66</span>
-      </div>
-      <div class="productPaymentMethodContainer">
-        <a href="">Ver los medios de pago</a>
-      </div>
-    </section>
-    <section class="buttomSection">
-      <div class="buttomContainer">
-        <button type="submit" class="buyButton">Comprar ahora</button>
-        <button type="submit" class="addButton">Agregar al carrito</button>
-      </div>
-    </section>
-    <hr>
-    <section class="desciptionSection">
-      <div class="descriptionContainer">
-        <h3 class="">Descripcion</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      </div>
-    </section>
-    <hr>
-    <section class="questionSection">
-      <div class="questionContainer">
-        <h3 class="">Preguntas y respuestas</h3>
-        <h3> Busca lo que queres saber</h3>
-        <input type="Escribe una pregunta o palabra clave">
-        <h4 class="">Ultimas realizadas</h4>
-        <span class="question"><p>Buenas, tenes stock?</p></span>
-        <span class="reply"><p>Buenas, si tenemos! Muchas gracias!</p></span>
-      </div>
-    </section>
-  </main>
-</body>
+  <body class="productDetailBody">
+    <main class="mainProductDetail">
+      <section class="productTittleSection">
+        <div class="productTittleContainer">
+          <h3 class="productTittle"><%= producto.name %></h3>
+        </div>
+      </section>
+      <section class="productPictureSection">
+        <div class="productPictureContainer">
+          <!-- <img src="/img/JavonLifebouy.png" class="productPicture" alt=""> -->
+        </div>
+      </section>
+      <section class="productPriceSection">
+        <div class="productPriceContainer">
+          <span class="productPrice">$ <%= producto.price %> </span>
+          <span class="productCuota">en 12x $6.66</span>
+        </div>
+        <div class="productPaymentMethodContainer">
+          <a href="">Ver los medios de pago</a>
+        </div>
+      </section>
+      <section class="buttomSection">
+        <div class="buttomContainer">
+          <button type="submit" class="buyButton">Comprar ahora</button>
+          <button type="submit" class="addButton">Agregar al carrito</button>
+        </div>
+      </section>
+      <hr />
+      <section class="desciptionSection">
+        <div class="descriptionContainer">
+          <h3 class="">Descripcion</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section class="questionSection">
+        <div class="questionContainer">
+          <h3 class="">Preguntas y respuestas</h3>
+          <h3>Busca lo que queres saber</h3>
+          <input type="Escribe una pregunta o palabra clave" />
+          <h4 class="">Ultimas realizadas</h4>
+          <span class="question"><p>Buenas, tenes stock?</p></span>
+          <span class="reply"><p>Buenas, si tenemos! Muchas gracias!</p></span>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
