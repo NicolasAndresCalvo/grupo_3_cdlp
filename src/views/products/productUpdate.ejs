@@ -3,7 +3,7 @@
   <%- include('../partials/headProduct.ejs') %>
 <body>
   <main>
-    <form action="/" class="boxlogin">
+    <form method="POST" action="/products/edit/:id?_method=PUT" class="boxlogin">
       <h2 class="title">Actualizar Producto</h2>
       <input type="text" placeholder="Editar nombre del producto">
       <input type="text" placeholder="Editar descripcion">

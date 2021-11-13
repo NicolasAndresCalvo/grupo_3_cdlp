@@ -41,8 +41,14 @@ const productsController = {
 
     res.redirect("/");
   },
+  // muestra la vista del edit
+  updateView:(req, res) =>{
+    res.render('productUpdate')
+  },
   // edita un producto existente (PUT)
-  editProduct: (req, res) => res.render("./products/productEdit"),
+  editProduct: (req, res) => {
+    
+  },
   // elimina un producto existente (DELETE)
   deleteProduct: (req, res) => res.render("./products/productDelete"),
 };

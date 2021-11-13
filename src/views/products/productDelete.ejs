@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/headProduct.ejs') %>
+  <%- include('../partials/headProduct.ejs') %>
 <body>
-    
+  <main>
+    <form action="/" class="boxlogin">
+        <h3>Estas seguro de que desea eliminar el <% producto.name %></h3>
+      <button type="submit">
+        Si
+      </button>
+      <button type="submit">
+        No
+      </button>
+  </main>
 </body>
 </html>
