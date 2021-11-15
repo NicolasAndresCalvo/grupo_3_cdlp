@@ -1,22 +1,40 @@
 const express = require("express");
+const path = require('path');
+const multer = require('multer');
+const router = express.Router();
 const productsController = require("../controllers/productsController");
 
-const router = express.Router();
+// Multer //
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, './public/img/products');
+  },
+  filename: function (req, file, cb) {
+    cb(null, `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`);
+  }
+})
+var upload = multer({ storage: storage })
 
-router.get("/", productsController.listProduct);
+// Route System //
+// 1. Listado de productos - /products (GET)
+router.get("/", productsController.index);
 
-router.get("/detalle/:id", productsController.detailView);
+// 2. Formulario de creación de productos - /products/create (GET)
+router.get("/create", productsController.create);
 
-router.get("/cart", productsController.cartView);
+// 4. Acción de creación (a donde se envía el formulario) - /products (POST)
+router.post("/", upload.single('image'), productsController.store);
 
-router.get("/create", productsController.createView);
+// 3. Detalle de un producto particular -  /products/:id (GET)
+router.get("/:id", productsController.detail);
 
-router.post("/create", productsController.createProduct);
+// 5. Formulario de edición de productos - /products/:id/edit (GET)
+router.get("/:id/edit", productsController.edit);
 
-router.get("/edit/:id", productsController.updateView);
+// 6. Acción de edición (a donde se envía el formulario) - /products/:id (PUT)
+router.put('/:id', upload.single('image'), productsController.update);
 
-router.put('/edit/:id', productsController.editProduct);
-
-router.delete('/delete/:id', productsController.deleteProduct);
+// 7. Acción de borrado - /products/:id (DELETE)
+router.delete('/:id', productsController.destroy);
 
 module.exports = router;
