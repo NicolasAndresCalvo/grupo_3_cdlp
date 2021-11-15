@@ -4,53 +4,79 @@ const productsFilePath = path.join(__dirname, "../database/products.json");
 const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
 
 const productsController = {
-  // muestra todos los productos (GET)
-  listProduct: (req, res) => {
+  // List View //
+  index: (req, res) => {
     res.render("./products/productList", { products });
   },
-  // /productos/:id muestra el detalle de un prod seleccionado (GET)
-  detailView: (req, res) => {
+  // Create View //
+  create: (req, res) => {
+    res.render("./products/productCreate")
+  },
+  // Store Method //
+  store: (req, res) => {
+    let image;
+		if(req.file != undefined){
+			image = req.file.filename
+		} else {
+			image = 'default-image.png'
+		};
+    let body = req.body;
+    console.log(req.file);
+    const productoMasAlto = products.sort((a, b) => a.id - b.id);
+    const idMasAlto = productoMasAlto[productoMasAlto.length - 1].id;
+    const nuevo = {
+      ...body,
+      id: idMasAlto + 1,
+      image: image
+    };
+    products.push(nuevo);
+    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+    res.redirect("/");
+  },
+  // Detail View //
+  detail: (req, res) => {
     const id = req.params.id;
     const producto = products.find((x) => x.id == id);
     if (producto) res.render("./products/productDetail", { producto });
     else res.redirect("/");
   },
-  // muestra el carrito
-  cartView: (req, res) => res.render("./products/productCart"),
-  // trae el formulario para crear productos (GET)
-  createView: (req, res) => res.render("./products/productCreate"),
-  // trae el formulario para editar un producto (GET)
-  updateView: (req, res) => res.render("./products/productUpdate"),
-  // crea un nuevo producto (POST)
-  createProduct: (req, res) => {
-    let body = req.body;
-    console.log(req.file);
-    const productoMasAlto = products.sort((a, b) => a.id - b.id);
-    const idMasAlto = productoMasAlto[productoMasAlto.length - 1].id;
-
-    const nuevo = {
-      ...body,
-
-      id: idMasAlto + 1,
-    };
-    products.push(nuevo);
-    fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-
-    /*
-     */
-
-    res.redirect("/");
+  // Update View //
+  edit:(req, res) =>{
+    const product = products.find(product => product.id == req.params.id);
+    res.render('./products/productUpdate', {product})
   },
-  // muestra la vista del edit
-  updateView:(req, res) =>{
-    res.render('productUpdate')
+  // Update Method //
+  update: (req, res) => {
+		let id = req.params.id;
+		let productToEdit = products.find(product => product.id == id)
+		let image
+		if(req.file != undefined){
+			image = req.file.filename
+		} else {
+			image = productToEdit.image
+		}
+
+		productToEdit = {
+			id: productToEdit.id,
+			...req.body,
+			image: image,
+		};
+		let newProducts = products.map(product => {
+			if (product.id == productToEdit.id) {
+				return product = {...productToEdit};
+			}
+			return product;
+		})
+
+		fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+		res.redirect('/');
   },
-  // edita un producto existente (PUT)
-  editProduct: (req, res) => {
-    
-  },
-  // elimina un producto existente (DELETE)
-  deleteProduct: (req, res) => res.render("./products/productDelete"),
+  // Destroy Method //
+  destroy: (req, res) => {
+		let products = products.filter(product => product.id != req.params.id);
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+		res.redirect('/');
+  }
 };
 
 module.exports = productsController;
